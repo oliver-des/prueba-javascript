@@ -8,16 +8,16 @@ y separados por espacios. Ejemplo: Para "Ana" devolverá "A N A".*/
  poner las  letras de un string en mayuscula y separarlas.*/
 function nombreMayuscSeparado(nombre) {
     /* La primera instruccion que le vamos a dar a la function es que ponga el parametro en mayusculas*/
-    nombre = nombre.toUpperCase()
+    const nombreMayuscula = nombre.toUpperCase()
     /* La segunda instruccion va a ser que separe las letras del string y cree una lista*/
-    nombre = nombre.split('')
+    const nombreArray = nombreMayuscula.split('')
     /* Teniendo nombre convertido en una lista(array) en la que cada elemento es una letra
      podemos usar el metodo join que devuelve un string concatenando los elementos de la lista. */
-    nombre = nombre.join(' ')
+    const letrasSeparadas = nombreArray.join(' ')
     /* Una funcion siempre -> return */
-    return nombre
+    return letrasSeparadas
 }
-console.log(nombreMayuscSeparado('Ana'))
+console.log(nombreMayuscSeparado('Pedro'))
 
 /*---------------------------------------------------- EJERCICIO  2 ---------------------------------------------------------
 Declara una function que acepte un nombre como parámetro y devuelva el número de palabras que tiene el nombre. 
@@ -25,12 +25,12 @@ Ejemplo: Para "Antonio Alberto Jesús" devolverá 3. */
 
 /*PRIMERO - Declarar una function con parametro nombre y darle las instrucciones necesarias para 
 que me devuelva el numero de palabras que tiene el nombre. */
-function contadorPalabras(nombre) {
+function contadorPalabras(nombre1) {
     /* Lo primero que vamos a hacer es convertir el nombre en un array para poder separar elementos(los separamos por espacios) 
     y no contar solo letras. */
-    nombre = nombre.split(' ')
+    const nombre1Array = nombre1.split(' ')
     /* Teniendo nombre convertido en una lista(array) debemos los elementos que contiene el array. */
-    return nombre.length
+    return nombre1Array.length
 
 }
 console.log(contadorPalabras('Antonio Alberto Jesús'))
@@ -44,6 +44,7 @@ que contenga como parametro la frase */
 /* Le damos instrucciones a la funcion, debe recorrer el string y contar las veces que aparece una determinada letra */
 
 function for (let i = 0; i <= frase.length; i++) {
+
 
 
 }
